@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    background: linear-gradient(45deg, #fbda61, #ff5acd);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.box {
+    height: 170px;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgb(0, 0, 0, 0.05);
+    margin: auto;
+    position: relative;
+    transition: 0.5s;
+    /* transition: <property> <duration> <timing-function> <delay>; */
+}
+
+.box-pic {
+    background-image: url("./profile-pic.jpg");
+    background-size: cover;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: -30px;
+
+    /* to perfectly center the box-pic */
+    transform: translateX(-50%);
+    left: 50%;
+
+    transition: 0.5s;
+}
+
+.box:hover {
+    height: 400px;
+}
+
+.box:hover .box-pic {
+    height: 170px;
+    width: 170px;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+
+    overflow: hidden;
+}
+
+.box:hover .details {
+    transform: translateY(0px);
+}
+
+.content .details {
+    transform: translateY(145px);
+    transition: .5s;
+}
+
+.content .details h2 {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.content .details h2 span {
+
+    color: #555;
+    font-size: 0.75em;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.content .data {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.content .data h2 {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0px 10px;
+}
+
+.content .data h2 span {
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+
+.content .social-icon {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.content .social-icon span {
+    font-size: 25px;
+    margin: 0px 10px;
+}
+.content .social-icon span a
+{
+    color: black;
+}
